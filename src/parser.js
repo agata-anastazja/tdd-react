@@ -1,4 +1,6 @@
-export const parseResponse  = (response) => {
-    const v = {};
-    return v
-}
+const parse = (response) => {
+    // some implementation;
+    return response
+  };
+
+export default parse  

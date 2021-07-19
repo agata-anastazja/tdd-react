@@ -1,8 +1,10 @@
 import axios from 'axios';
+import parse from './parser'
 
-export const getWeather  = (parseResponse) => {
+
+export const getWeather  = () => {
     const response = callWeatherApi()
-    return parseResponse(response)
+    return parse(response)
 }
 
 const callWeatherApi = () => {
